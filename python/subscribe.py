@@ -7,8 +7,7 @@ from paho.mqtt import client as mqtt_client
 #   購買するトピックス
 toipx = 'acf/env/#'
 #   Brokerのホスト名(IPアドレス)
-# server = 'mqtt.inlet.wjg.jp'
-server = '192.168.2.251'
+server = 'mqtt.inlet.wjg.jp'
 port = 1883
 #   ランダムなClient ID
 client_id = f'python-mqtt-{random.randint(0, 1000)}'
