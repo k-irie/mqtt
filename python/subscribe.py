@@ -8,9 +8,10 @@ from paho.mqtt import client as mqtt_client
 toipx = 'acf/env/#'
 #   Brokerのホスト名(IPアドレス)
 server = 'mqtt.inlet.wjg.jp'
+server = '192.168.2.251'
 port = 1883
 #   ランダムなClient ID
-client_id = f'python-mqtt-{random.randint(0, 1000)}'
+client_id = f'python-mqtt-{random.randint(0, 1000):04}'
 
 # 接続完了時のイベント処理
 def on_connect(client,userdata,flags,rc):
